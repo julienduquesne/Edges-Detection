@@ -7,7 +7,7 @@ I aimed at detecting edges on an image. I followed the following steps to do so:
 I used a gaussian filter to remove noise from the image. It consists in a convolution of the image with a gaussian function in two dimensions
 ## Computing gradient 
 We can easily compute the gradient of an image by using the Sobel filter.
-##Thinning gradient
+## Thinning gradient
 After computing it, I needed to thin it. To do so, I only kept the maximas of gradient, using the direction of gradient and keeping only pixels that has a higher gradient than his neighbors
 ## Separating gradient between strong and weak edges
 I fixed a threshold to separate gradient and keep strong gradient points, i.e points that have a gradient over the threshold
